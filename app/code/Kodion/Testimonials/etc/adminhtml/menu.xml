@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Kodion_Testimonials::testimonial" title="Testimonials" module="Kodion_Testimonials" sortOrder="51" resource="Kodion_Testimonials::testimonial"/>
+        <add id="Kodion_Testimonials::post" title="Manage Testimonials" module="Kodion_Testimonials" sortOrder="10" action="kodion_testimonials/post" resource="Kodion_Testimonials::post" parent="Kodion_Testimonials::testimonial"/>
+        <add id="Kodion_Testimonials::testionial_configuration" title="Configuration" module="Kodion_Testimonials" sortOrder="99" parent="Kodion_Testimonials::testimonial" action="adminhtml/system_config/edit/section/testimonial" resource="Kodion_Testimonials::helloworld_configuration"/>
+    </menu>
+</config>
